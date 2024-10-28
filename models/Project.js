@@ -1,4 +1,3 @@
-// models/Project.js
 const { Model, DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {

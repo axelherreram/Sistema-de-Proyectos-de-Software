@@ -1,4 +1,3 @@
-// migrations/YYYYMMDDHHMMSS-create-modules.js
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('modules', {

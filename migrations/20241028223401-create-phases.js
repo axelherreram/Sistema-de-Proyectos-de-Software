@@ -1,4 +1,3 @@
-// migrations/YYYYMMDDHHMMSS-create-phases.js
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('phases', {

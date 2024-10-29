@@ -51,13 +51,13 @@ router.get('/', ProjectController.getAll);
 
 /**
  * @swagger
- * /projects/{id}:
+ * /projects/{projectId}:
  *   get:
  *     summary: Obtener un proyecto por ID
  *     tags: [Projects]
  *     parameters:
  *       - in: path
- *         name: id
+ *         name: projectId
  *         required: true
  *         schema:
  *           type: integer
@@ -74,7 +74,7 @@ router.get('/', ProjectController.getAll);
  *       500:
  *         description: Error al obtener el proyecto
  */
-router.get('/:id', ProjectController.getById);
+router.get('/:projectId', ProjectController.getById);
 
 /**
  * @swagger

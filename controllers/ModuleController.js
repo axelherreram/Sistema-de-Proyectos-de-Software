@@ -6,7 +6,6 @@ const ModuleController = {
       const module = await Module.create(req.body);
       res.status(201).json(module);
     } catch (error) {
-        console.error("Error al crear el módulo:", error); 
       res
         .status(500)
         .json({ error: "Error al crear el módulo", details: error });

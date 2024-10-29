@@ -16,6 +16,7 @@ const ModuleController = {
     try {
       const { projectId } = req.params;
       const modules = await Module.findAll({
+        where: { projectId },
         include: [
             { model: Project, as: 'project' }, 
             { model: Phase, as: 'phase' }, 

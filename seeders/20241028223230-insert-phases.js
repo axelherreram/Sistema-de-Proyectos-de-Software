@@ -1,4 +1,3 @@
-// seeders/YYYYMMDDHHMMSS-insert-phases.js
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('phases', [

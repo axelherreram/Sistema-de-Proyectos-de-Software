@@ -1,4 +1,3 @@
-// routes/modules.js
 const express = require('express');
 const router = express.Router();
 const ModuleController = require('../controllers/ModuleController');

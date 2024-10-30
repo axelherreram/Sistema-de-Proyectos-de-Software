@@ -4,6 +4,7 @@ const swaggerDocs = require('./docs/swagger');
 const projectsRouter = require('./routes/projects');
 const modulesRouter = require('./routes/modules');
 const phasesRouter  = require('./routes/phases');
+const dashboardRouter = require("./routes/dashboard");
 const cors = require("cors"); 
 
 const app = express();
@@ -15,6 +16,7 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
+app.use("/dashboard", dashboardRouter);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use(express.json());
 app.use('/projects', projectsRouter);
